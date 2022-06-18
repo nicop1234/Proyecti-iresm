@@ -4,7 +4,7 @@ import Nava from '../components/Layout.js';
 import Bodys from '../components/Body';
 
 
-export default function Home() {
+export default function saga1() {
   return (
     <Nava>
       <Bodys></Bodys>
