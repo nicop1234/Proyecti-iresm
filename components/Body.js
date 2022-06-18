@@ -1,10 +1,12 @@
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Image from 'next/image';
 import {Button, Container, Row} from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import Link from 'next/link'
+
+
+
 
 const Bodys= () => {
     return(
@@ -13,7 +15,7 @@ const Bodys= () => {
             <Container className='mt-4 mb-4' id='inicio' >
                 <Row >
                     <div className='col-lg-6 col-12 d-flex align-items-center '>
-                        <div className=''>
+                        <div >
                             <div className='d-flex justify-content-center'>
                                 <h1>INICIO</h1>
                             </div>
