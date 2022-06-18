@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Image from 'next/image';
 import {Button, Container, Row} from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
-
+import Link from 'next/link'
 
 const Bodys= () => {
     return(
@@ -41,9 +41,9 @@ const Bodys= () => {
                 <div className='d-flex flex-wrap'>
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
-                            <a href='../pages/Saga1.js'>
+                            <Link href='/Saga1.js'>
                             <Image  src='/assets/1-saga.png'  width={300} height={450} layout='intrinsic'/>
-                            </a>
+                            </Link>
                         </div>
                         <p className='text-center'>Dragon ball</p>
                     </div>
