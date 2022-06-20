@@ -26,7 +26,7 @@ const Bodys= () => {
                     </div>
                     <div className='col-lg-6 col-12 d-flex justify-content-center d-flex align-items-center'>
                         <div>
-                            <Image  src='/assets/primer-imagen.png'  width={450} height={250} layout='intrinsic'/>
+                            <Image alt='dragonball' src='/assets/primer-imagen.png'  width={450} height={250} layout='intrinsic'/>
                         </div>
                     </div>
                 </Row>
@@ -44,7 +44,7 @@ const Bodys= () => {
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
                             <Link href='/Saga1'>
-                            <Image  src='/assets/1-saga.png'  width={300} height={450} layout='intrinsic'/>
+                            <Image alt='dragonball'  src='/assets/1-saga.png'  width={300} height={450} layout='intrinsic'/>
                             </Link>
                         </div>
                         <p className='text-center'>Dragon ball</p>
@@ -52,7 +52,7 @@ const Bodys= () => {
                     <div className='col-lg-4 col-12 justify-content-center'>
                         <div className='d-flex justify-content-center'>
                             <Link href='/Saga2'>
-                                <Image  src='/assets/2-saga.png'  width={400} height={300} layout='intrinsic'/>
+                                <Image alt='dragonball' src='/assets/2-saga.png'  width={400} height={300} layout='intrinsic'/>
                             </Link>
                         </div>
                         <p className='text-center'>Dragonball z</p>
@@ -60,7 +60,7 @@ const Bodys= () => {
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
                             <Link href='/Saga3'>
-                                <Image  src='/assets/3-saga.png'  width={300} height={450} layout='intrinsic'/>
+                                <Image alt='dragonball'  src='/assets/3-saga.png'  width={300} height={450} layout='intrinsic'/>
                             </Link>
                         </div>
                         <p className='text-center'>Dragonball Kai</p>
@@ -68,7 +68,7 @@ const Bodys= () => {
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
                             <Link href='/Saga4'>
-                                <Image  src='/assets/4-saga.png'  width={300} height={450} layout='intrinsic'/>
+                                <Image alt='dragonball'  src='/assets/4-saga.png'  width={300} height={450} layout='intrinsic'/>
                             </Link>
                         </div>
                         <p className='text-center'>Dragonball super</p>
@@ -76,7 +76,7 @@ const Bodys= () => {
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
                             <Link href='/Saga5'>
-                                <Image  src='/assets/5-saga.png'  width={300} height={450} layout='intrinsic'/>
+                                <Image alt='dragonball' src='/assets/5-saga.png'  width={300} height={450} layout='intrinsic'/>
                             </Link>
                         </div>
                         <p className='text-center'>Dragonball Heroes</p>
@@ -84,7 +84,7 @@ const Bodys= () => {
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
                             <Link href='/Saga6'>
-                                <Image  src='/assets/6-saga.png'  width={300} height={450} layout='intrinsic'/>
+                                <Image alt='dragonball' src='/assets/6-saga.png'  width={300} height={450} layout='intrinsic'/>
                             </Link>
                         </div>
                         <p className='text-center'>Dragonball GT</p>
@@ -104,7 +104,7 @@ const Bodys= () => {
                     <div className=' col-lg-3 col-11 mb-4'>
                         <div >
                             <Card >
-                                <Card.Img variant="top" src="/assets/capitulo84.png" />
+                                <Card.Img variant="top" alt='dragonball' src="/assets/capitulo84.png" />
                                 <Card.Body>
                                     <Card.Title><p className='text-center'> capitulo84</p></Card.Title>
                                     <Card.Text>
@@ -120,7 +120,7 @@ const Bodys= () => {
                     <div className=' col-lg-3 col-11 mb-4 ms-3 me-3'>
                         <div >
                             <Card >
-                                <Card.Img variant="top" src="/assets/capitulo83.png" />
+                                <Card.Img variant="top" alt='dragonball' src="/assets/capitulo83.png" />
                                 <Card.Body>
                                     <Card.Title><p className='text-center'> capitulo83</p></Card.Title>
                                     <Card.Text>
@@ -136,7 +136,7 @@ const Bodys= () => {
                     <div className=' col-lg-3 col-11 mb-4'>
                         <div >
                             <Card >
-                                <Card.Img variant="top" src="/assets/capitulo82.png" />
+                                <Card.Img variant="top" alt='dragonball' src="/assets/capitulo82.png" />
                                 <Card.Body>
                                     <Card.Title><p className='text-center'> capitulo82</p></Card.Title>
                                     <Card.Text>

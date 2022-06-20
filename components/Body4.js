@@ -15,13 +15,13 @@ const Body4= () => {
                                     <h1>Historia</h1>
                                 </div>
                                 <div className='d-flex justify-content-center'>
-                                    <p className='text-center'>Dragon Ball Z Kai, conocida en Japón como Dragon Ball Kai (ドラゴンボール改カイ, Doragon Bōru Kai), es una edición renovada de la serie de anime Dragon Ball Z, estrenada el 5 de abril de 2009 con motivo de conmemorar el vigésimo aniversario de la serie original. La voz japonesa kai (改かい) en el nombre de la serie significa 'actualizado', 'modificado' o 'alterado'.</p>
+                                    <p className='text-center'>Dragon Ball Z Kai, conocida en Japón como Dragon Ball Kai (ドラゴンボール改カイ, Doragon Bōru Kai), es una edición renovada de la serie de anime Dragon Ball Z, estrenada el 5 de abril de 2009 con motivo de conmemorar el vigésimo aniversario de la serie original. La voz japonesa kai (改かい) en el nombre de la serie significa actualizado, modificado o alterado.</p>
                                 </div>
                             </div>
                         </div>
                         <div className='col-12 col-lg-6' >
                             <div className='d-flex justify-content-center'>
-                                <Image alt='dragonball' src='/assets/4pag-1.png'  width={500} height={650} layout='intrinsic'/> 
+                                <Image alt='dragonball' src='/assets/4pag-1.png'  width={500} height={650} layout='intrinsic'/>
                             </div>
                         </div>
                     </Row>

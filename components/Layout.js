@@ -9,7 +9,7 @@ const Nava = ({children}) => {
       <>
       <Navbar collapseOnSelect expand="lg" sticky="top" className='bg-danger'>
           <Container>
-            <Nav.Link ><Image  src='/assets/logo.png'  width={230} height={120} layout='intrinsic'/></Nav.Link>
+            <Nav.Link ><Image alt='dragonball' src='/assets/logo.png'  width={230} height={120} layout='intrinsic'/></Nav.Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav  justify-content-between">
               <Nav className="me-auto  d-flex  ">
@@ -25,7 +25,7 @@ const Nava = ({children}) => {
       {children}
       <Navbar collapseOnSelect expand="lg" sticky="top" className='bg-dark'>
           <Container>
-            <Nav.Link ><Image  src='/assets/logo-2.png'  width={130} height={130} layout='intrinsic'/></Nav.Link>
+            <Nav.Link ><Image alt='dragonball' src='/assets/logo-2.png'  width={130} height={130} layout='intrinsic'/></Nav.Link>
               <Nav className="me-auto  d-flex  ">
               </Nav>
               <Nav>
