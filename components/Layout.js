@@ -6,7 +6,7 @@ import { Nav, Navbar,  Container,  } from 'react-bootstrap'
 
 const Nava = ({children}) => {
     return(
-      <>  
+      <>
       <Navbar collapseOnSelect expand="lg" sticky="top" className='bg-danger'>
           <Container>
             <Nav.Link ><Image  src='/assets/logo.png'  width={230} height={120} layout='intrinsic'/></Nav.Link>

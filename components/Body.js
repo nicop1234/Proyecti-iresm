@@ -43,7 +43,7 @@ const Bodys= () => {
                 <div className='d-flex flex-wrap'>
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
-                            <Link href='/Saga1.js'>
+                            <Link href='/Saga1'>
                             <Image  src='/assets/1-saga.png'  width={300} height={450} layout='intrinsic'/>
                             </Link>
                         </div>
@@ -51,41 +51,41 @@ const Bodys= () => {
                     </div>
                     <div className='col-lg-4 col-12 justify-content-center'>
                         <div className='d-flex justify-content-center'>
-                            <a>
+                            <Link href='/Saga2'>
                                 <Image  src='/assets/2-saga.png'  width={400} height={300} layout='intrinsic'/>
-                            </a>
+                            </Link>
                         </div>
                         <p className='text-center'>Dragonball z</p>
                     </div>
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
-                            <a>
+                            <Link href='/Saga3'>
                                 <Image  src='/assets/3-saga.png'  width={300} height={450} layout='intrinsic'/>
-                            </a>
+                            </Link>
                         </div>
                         <p className='text-center'>Dragonball Kai</p>
                     </div>
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
-                            <a>
+                            <Link href='/Saga4'>
                                 <Image  src='/assets/4-saga.png'  width={300} height={450} layout='intrinsic'/>
-                            </a>
+                            </Link>
                         </div>
                         <p className='text-center'>Dragonball super</p>
                     </div>
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
-                            <a>
+                            <Link href='/Saga5'>
                                 <Image  src='/assets/5-saga.png'  width={300} height={450} layout='intrinsic'/>
-                            </a>
+                            </Link>
                         </div>
                         <p className='text-center'>Dragonball Heroes</p>
                     </div>
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex justify-content-center'>
-                            <a>
+                            <Link href='/Saga6'>
                                 <Image  src='/assets/6-saga.png'  width={300} height={450} layout='intrinsic'/>
-                            </a>
+                            </Link>
                         </div>
                         <p className='text-center'>Dragonball GT</p>
                     </div>

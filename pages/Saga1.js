@@ -1,13 +1,11 @@
-import Head from 'next/head'
 import React from 'react';
-import Nava from '../components/Layout.js';
-import Bodys from '../components/Body';
-import Link from 'next/link'
+import Nava2 from '../components/Layout2';
+import Body2 from '../components/Body2';
 
 export default function Home() {
   return (
-    <Nava>
-      <Bodys></Bodys>
-    </Nava>
+    <Nava2>
+      <Body2></Body2>
+    </Nava2>
   )
 }
