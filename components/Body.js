@@ -1,156 +1,130 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import Image from 'next/image';
 import {Button, Container, Row} from 'react-bootstrap';
-import Card from 'react-bootstrap/Card';
-import Link from 'next/link'
-
+import Image from 'next/image'
+import { Navigation, Pagination, } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 
 
 const Bodys= () => {
     return(
         <main>
-            {/* Inicio*/}
-            <Container className='mt-4 mb-4' id='inicio' >
-                <Row >
-                    <div className='col-lg-6 col-12 d-flex align-items-center '>
-                        <div >
-                            <div className='d-flex justify-content-center'>
-                                <h1>INICIO</h1>
-                            </div>
-                            <div className='d-flex justify-content-center'>
-                                <p className='text-center'>Fue publicado originalmente en la revista Shōnen Jump, de la editorial japonesa Shūeisha, entre 1984 y 1995. Su trama describe las aventuras de Gokū, un guerrero saiyajin, cuyo fin es proteger a la Tierra de otros seres que quieren conquistarla y exterminar a la humanidad.</p>
-                            </div>
-                        </div>
+            <Container>
+                <Row className='mb-4'>
+                    <div className='d-flex justify-content-center'>
+                        <h1 className='text-info'>Matematica</h1>
                     </div>
-                    <div className='col-lg-6 col-12 d-flex justify-content-center d-flex align-items-center'>
+                </Row>
+                <Row className='mb-5' >
+                    <div className='col-lg-6 col-12 d-flex justify-content-center align-items-center'>
                         <div>
-                            <Image alt='dragonball' src='/assets/primer-imagen.png'  width={450} height={250} layout='intrinsic'/>
+                            <div className='d-flex justify-content-center'>
+                                <h2 className='text-center text-danger'>Problemas de la semana</h2>
+                            </div>
+                            <div>
+                                <h5 className='text-center'>Estos son los problemas de la semana los cuales estan divididos en <span className='text-danger'>1-3</span> el problema A <span className='text-danger'>4-5</span> el problema B y <span className='text-danger'>6</span> el problema C</h5>
+                            </div>
+                            <div className='d-flex justify-content-center'>
+                                <Button style={{borderRadius:13, height:50, width:100}} variant="info"><a>Ir a ver</a></Button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-lg-6 col-12 d-flex justify-content-center'>
+                        <div>
+                            <div>
+                                <h2 className='text-center text-danger'>Profesores de matematica</h2>
+                            </div>
+                            <div className='w-100 h-100'>
+                            <Swiper slidesPerView={1} pagination={true} navigation={true}  modules={[Pagination, Navigation]} className="mySwiper" >
+                            <SwiperSlide >
+                                <Container className=''>
+                                    <Row>
+                                        <div className='d-flex justify-content-center'>
+                                            <h2 className=' mb-3'>Laura Mayer</h2>
+                                        </div>
+                                    </Row>
+                                    <div className=' d-flex justify-content-center text-center align-items-center  '>
+                                        <div className='d-flex justify-content-center text-center align-items-center col-12 col-lg-5 '>
+                                            <Image alt='Mayer' src='/assets/mayer.png'  width={300} height={300} layout='intrinsic'/>
+                                        </div>
+                                    </div>
+                                </Container>
+                            </SwiperSlide>
+                            <SwiperSlide >
+                                <Container className=''>
+                                    <Row>
+                                        <div className='d-flex justify-content-center'>
+                                            <h2 className=' mb-3'>Laura Mayer</h2>
+                                        </div>
+                                    </Row>
+                                    <div className=' d-flex justify-content-center text-center align-items-center  '>
+                                        <div className='d-flex justify-content-center text-center align-items-center col-12 col-lg-5 '>
+                                            <Image alt='Mayer' src='/assets/mayer.png'  width={300} height={300} layout='intrinsic'/>
+                                        </div>
+                                    </div>
+                                </Container>
+                            </SwiperSlide>
+                        </Swiper>
+                            </div>
                         </div>
                     </div>
                 </Row>
-            </Container>
-            {/* Sagas*/}
-            <Container className='mb-4' id='sagas' >
-                <Row >
-                    <div className='d-flex justify-content-center' >
-                        <h1 className='text-center'>Todas las sagas</h1>
+                <Row className='mb-3 mt-5'>
+                    <div className='d-flex justify-content-center'>
+                        <h2 className='text-danger'>Ultimos tema de 5°C</h2>
                     </div>
                 </Row>
-            </Container>
-            <div >
-                <div className='d-flex flex-wrap'>
-                    <div className='col-lg-4 col-12'>
-                        <div className='d-flex justify-content-center'>
-                            <Link href='/Saga1'>
-                            <Image alt='dragonball'  src='/assets/1-saga.png'  width={300} height={450} layout='intrinsic'/>
-                            </Link>
-                        </div>
-                        <p className='text-center'>Dragon ball</p>
-                    </div>
-                    <div className='col-lg-4 col-12 justify-content-center'>
-                        <div className='d-flex justify-content-center'>
-                            <Link href='/Saga2'>
-                                <Image alt='dragonball' src='/assets/2-saga.png'  width={400} height={300} layout='intrinsic'/>
-                            </Link>
-                        </div>
-                        <p className='text-center'>Dragonball z</p>
-                    </div>
-                    <div className='col-lg-4 col-12'>
-                        <div className='d-flex justify-content-center'>
-                            <Link href='/Saga3'>
-                                <Image alt='dragonball'  src='/assets/3-saga.png'  width={300} height={450} layout='intrinsic'/>
-                            </Link>
-                        </div>
-                        <p className='text-center'>Dragonball Kai</p>
-                    </div>
-                    <div className='col-lg-4 col-12'>
-                        <div className='d-flex justify-content-center'>
-                            <Link href='/Saga4'>
-                                <Image alt='dragonball'  src='/assets/4-saga.png'  width={300} height={450} layout='intrinsic'/>
-                            </Link>
-                        </div>
-                        <p className='text-center'>Dragonball super</p>
-                    </div>
-                    <div className='col-lg-4 col-12'>
-                        <div className='d-flex justify-content-center'>
-                            <Link href='/Saga5'>
-                                <Image alt='dragonball' src='/assets/5-saga.png'  width={300} height={450} layout='intrinsic'/>
-                            </Link>
-                        </div>
-                        <p className='text-center'>Dragonball Heroes</p>
-                    </div>
-                    <div className='col-lg-4 col-12'>
-                        <div className='d-flex justify-content-center'>
-                            <Link href='/Saga6'>
-                                <Image alt='dragonball' src='/assets/6-saga.png'  width={300} height={450} layout='intrinsic'/>
-                            </Link>
-                        </div>
-                        <p className='text-center'>Dragonball GT</p>
-                    </div>
-                </div>
-            </div>
-            {/* Ultimos Episodios*/}
-            <Container className='mb-4' id='ver'>
                 <Row>
-                    <div className='d-flex justify-content-center' >
-                        <h1 className='text-center'> Ultimos Episodios </h1>
+                    <div className='col-lg-6 col-12 d-flex justify-content-center bordes p-1 align-items-center' style={{height:400}}>
+                        <Image alt='Bakara' src='/assets/Baskara.png'  width={400} height={350} layout='intrinsic'/>
+                    </div>
+                    <div className='col-lg-6 col-12 d-flex justify-content-center align-items-center'>
+                        <div>
+                            <div className='d-flex justify-content-center'>
+                                <h2 className='text-center '>Formula de Bhaskara</h2>
+                            </div>
+                            <div>
+                                <h5 className='text-center'>fue un matemático y astrónomo indio. Conocido por ser el creador de la fórmula cuadrática o resolvente.</h5>
+                            </div>
+                            <div className='d-flex justify-content-center'>
+                                <Button style={{borderRadius:13, height:50, width:100}} variant="info"><a>Ingresar</a></Button>
+                            </div>
+                        </div>
+                    </div>
+                </Row>
+                <Row className='mt-5'>
+                    <div className='col-lg-6 col-12 d-flex justify-content-center align-items-center'>
+                        <div>
+                            <div className='d-flex justify-content-center'>
+                                <h2 className='text-center '>Logaritmos</h2>
+                            </div>
+                            <div>
+                                <h5 className='text-center'>Lorems lorem </h5>
+                            </div>
+                            <div className='d-flex justify-content-center'>
+                                <Button style={{borderRadius:13, height:50, width:100}} variant="info"><a>Ingresar</a></Button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-lg-6 col-12 d-flex justify-content-center bordes p-3 align-items-center' style={{height:400}}>
+                        <div>
+                            <Image alt='Bakara' src='/assets/logaritmo.png'  width={500} height={250} layout='intrinsic'/>
+                        </div>
+                    </div>
+                </Row>
+                <Row className='mb-3 mt-5'>
+                    <div className='d-flex justify-content-center'>
+                        <h2 className='text-danger'>Tutorias</h2>
+                    </div>
+                </Row>
+                <Row>
+                    <div className='col-12  d-flex justify-content-center align-items-center'>
+                        <div>
+                        </div>
                     </div>
                 </Row>
             </Container>
-            <Row className='m-0'>
-                <div className='d-flex flex-wrap mb-4 p-0 col-12  justify-content-center'>
-                    <div className=' col-lg-3 col-11 mb-4'>
-                        <div >
-                            <Card >
-                                <Card.Img variant="top" alt='dragonball' src="/assets/capitulo84.png" />
-                                <Card.Body>
-                                    <Card.Title><p className='text-center'> capitulo84</p></Card.Title>
-                                    <Card.Text>
-                                        <p className='text-center'> Capitulo 84 del manga de Dragon Ball</p>
-                                    </Card.Text>
-                                    <div className='d-flex justify-content-center'>
-                                        <Button variant="dark">Ir a ver</Button>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </div>
-                    <div className=' col-lg-3 col-11 mb-4 ms-3 me-3'>
-                        <div >
-                            <Card >
-                                <Card.Img variant="top" alt='dragonball' src="/assets/capitulo83.png" />
-                                <Card.Body>
-                                    <Card.Title><p className='text-center'> capitulo83</p></Card.Title>
-                                    <Card.Text>
-                                        <p className='text-center'> Capitulo 83 del manga de Dragon Ball</p>
-                                    </Card.Text>
-                                    <div className='d-flex justify-content-center'>
-                                        <Button variant="dark">Ir a ver</Button>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </div>
-                    <div className=' col-lg-3 col-11 mb-4'>
-                        <div >
-                            <Card >
-                                <Card.Img variant="top" alt='dragonball' src="/assets/capitulo82.png" />
-                                <Card.Body>
-                                    <Card.Title><p className='text-center'> capitulo82</p></Card.Title>
-                                    <Card.Text>
-                                        <p className='text-center'> Capitulo 82 del manga de Dragon Ball</p>
-                                    </Card.Text>
-                                    <div className='d-flex justify-content-center'>
-                                        <Button variant="dark">Ir a ver</Button>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </div>
-                    </div>
-                </div>
-            </Row>
         </main>
     )
 }
