@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Nav, Navbar,  Container,  } from 'react-bootstrap'
 
 
-const Nava = ({children}) => {
+const Layout = ({children}) => {
     return(
       <>
       <Navbar collapseOnSelect expand="lg"  className='bg-white'>
@@ -46,4 +46,4 @@ const Nava = ({children}) => {
     </>
     )
 }
-export default Nava;
+export default Layout;

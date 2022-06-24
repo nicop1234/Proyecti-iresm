@@ -1,11 +1,11 @@
 import React from 'react';
-import Nava from '../components/Layout.js';
+import Layout from '../components/Layout.js';
 import Bodys from '../components/Body';
 
 export default function Home() {
   return (
-    <Nava>
+    <Layout>
       <Bodys></Bodys>
-    </Nava>
+    </Layout>
   )
 }
