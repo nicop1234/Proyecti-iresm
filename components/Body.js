@@ -88,7 +88,7 @@ const Bodys= () => {
                                 <h5 className='text-center'>fue un matemático y astrónomo indio. Conocido por ser el creador de la fórmula cuadrática o resolvente.</h5>
                             </div>
                             <div className='d-flex justify-content-center'>
-                                <Button style={{borderRadius:13, height:50, width:100}} variant="info"><a>Ingresar</a></Button>
+                                <Button style={{borderRadius:13, height:50, width:100}} variant="info"><a hreh>Ingresar</a></Button>
                             </div>
                         </div>
                     </div>
