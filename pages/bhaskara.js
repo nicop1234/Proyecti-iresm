@@ -14,13 +14,27 @@ export default function Home() {
     const[stateB, setB] = useState('')
     const[stateC, setC] = useState('')
     const[resutaldo, setResultado] = useState(0)
-    
+    let lista =[
+        {id:1, edad:20 , show:false , input: {
+            a: '',
+            b:'',
+            c:''
+        }},
+        {id:2,edad:22, show:true},
+        {id:3,edad:25 , show: false},
+        {id:4,edad:30 , show: false}
+    ]
     console.log("inputs", inputs)
+    console.log("lista", lista.filter(i => i.show))
 
     function calcular(a, b, c){
+    
         let bNegativo = b * -1;
+
         let bCuadrado = b * b;
+
         let Calculo = -4 * a * c;
+
         let divisor = 2 * a;
         let Calculo2 = (bCuadrado + Calculo);
         let resultadoraiz = Math.sqrt(Calculo2);
@@ -31,17 +45,45 @@ export default function Home() {
 
     }
 
-    const handleSubmit = () =>{
-        const {A, B , C} = inputs
-        let aux = calcular(A, B, C)
+    function calcularDelta(a,b,c){
+        return b * b - 4 * a * c;
+    }
+    const handleOnChage = (e) =>{
+        setInputs({...inputs, [e.target.name]: e.target.value})
+        if(e.target.name === 'A'){
+            setA(e.target.value)
+        }
+        if(e.target.name === 'B'){
+            setB(e.target.value)
+        }
+        if(e.target.name === 'C'){
+            setC(e.target.value)
+        }
+        console.log(e.target.value , e.target.name)
+    }
 
+    const handleSubmit = () => {
+        if(!stateA || !stateB || !stateC){
+            alert("Ingrese todos los campos")
+            return;
+        }else if(stateA == 0) {
+            alert("no se puede dividir por 0")
+            return;
+        }
 
-        setResultado(aux)
-        setInputs({
-            A:"",
-            B:"",
-            C:""
-        })
+        
+        let delta = calcularDelta(stateA, stateB, stateC)
+        if(delta < 0){
+            alert ("Sin raices reales")
+            return;
+        } 
+
+        let x1 = ((-stateB + Math.sqrt(delta))/(2*stateA) )
+        let x2 = ((-stateB - Math.sqrt(delta))/(2*stateA) )
+        
+        setResultado({resA: x1, resB:x2})
+
+    
     }
 
     return (
@@ -50,24 +92,38 @@ export default function Home() {
         <div>
             <div>
                 <label>A</label>
-                <input placeholder='a' name="stateA" id="stateA" value={inputs.A} onChange={e => {
-                    setInputs({...inputs, A : e.target.value})
-                    setA(e.target.value)}}/>
+                <input placeholder='a' name="A" id="stateA" value={inputs.A} onChange={e => {
+                    handleOnChage(e)
+                   
+                    // setInputs({...inputs, A : e.target.value})
+                }}/>
                 </div>
                 <div>
                 <label>B</label>
-                <input placeholder='b' name="stateB" id="stateB" value={inputs.B} onChange={e => setInputs({...inputs, B : e.target.value})}/>
+                <input placeholder='b' name="B" id="stateB" value={inputs.B} onChange={e =>{
+                    handleOnChage(e)
+                    
+                }}/>
                 </div>
                 <div>
                 <label>C</label>
-                <input placeholder='c' name="stateC" id="stateC" value={inputs.C} onChange={e => setInputs({...inputs, C : e.target.value})}/>
+                <input placeholder='c' name="C" id="stateC" value={inputs.C} onChange={e => 
+                    {
+                    handleOnChage(e)
+                   
+                    }}/>
                 </div>
                 <button type='button' onClick={()=> handleSubmit()} >mandar</button>
-                <button type='button' onClick={()=> setResultado("")} >Limpiar</button>
+                <button type='button' onClick={()=> setResultado()} >Limpiar</button>
             </div>
             <div> 
                 {resutaldo.resA}
                 {resutaldo.resB}
+            </div>
+            <div>
+                {lista.map(i => (
+                   <p key={i.id}> {i.edad}</p>
+                ))}
             </div>
 {/* 
             <section>
@@ -125,5 +181,5 @@ export default function Home() {
             
         </Layout>
         </>
-    )
+    );
 }
