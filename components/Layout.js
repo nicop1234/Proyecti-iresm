@@ -15,7 +15,7 @@ const Layout = ({children}) => {
               <Nav className="me-auto  d-flex  ">
               </Nav>
               <Nav>
-                <Nav.Link href='#inicio' ><p className=' text-center'>Inicio</p></Nav.Link>
+                <Nav.Link href='/' ><p className=' text-center'>Inicio</p></Nav.Link>
                 <Nav.Link href='#sagas' ><p className=' text-center'>Poble-maticos</p></Nav.Link>
                 <Nav.Link href='#ver'><p className=' text-center'>Mati-creed</p></Nav.Link>
                 <Nav.Link href='#ver'><p className=' text-center'>Notis</p></Nav.Link>
